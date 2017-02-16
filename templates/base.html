@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Build-A-Blog</title>
+    </head>
+<style type='text/css'>
+  body {
+    font-family:sans-serif;
+    width: 800px;
+    margin; 0 auto;
+    padding: 10px;
+  }
+.error {
+  color:red;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+}
+
+input[type=text] {
+  width: 400px;
+  font-size: 20px;
+  padding: 2px;
+}
+
+textarea {
+  width:400px;
+  height: 200px;
+  font-size: 17px;
+  font-family: monospace;
+}
+
+input[type='submit']{
+  font-size: 24px;
+}
+
+hr {
+  margin: 20px auto;
+}
+
+.post-form {
+  padding: 0px;
+  margin: 0px;
+}
+
+.post-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.post-content {
+
+}
+
+</style>
+    <body>
+        <h1>Build-A-Blog</h1>
+<div class='links'>
+  <a href="/blog">home</a> <a href="/newpost">new post</a>
+</div>
+        {% block content %}
+        {% endblock %}
+        </form>
+    </body>
+    <footer></footer>
+</html>
